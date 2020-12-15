@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.design {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 40vh;
+  margin-top: 100%;
+  background-color: #131313;
+}
+
+.footer-icons {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  text-decoration: none;
+
+  width: 50%;
+}
+
+.footer-content {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer-list {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 50%;
+  list-style: none;
+}
+a {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+#foo a {
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+#foo a::before {
+  position: relative;
+  content: "|";
+  opacity: 0.01;
+
+  transition: all 0.8s ease-in-out;
+  left: 0;
+  color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+#foo a:hover::before {
+  opacity: 1;
+  width: auto;
+  left: 100%;
+  transform: scaleX(1);
+  transform: rotate(360deg);
+  transform-origin: left;
+}
+
+h1 {
+  color: #fff;
+}
+
+.footer-item {
+  width: 200px;
+}
+
+#insta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+#insta::before {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "Instagram";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-in;
+}
+#insta::after {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "@Leo-Mahesh";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-out;
+}
+
+#insta:hover::before {
+  opacity: 1;
+  transform: translateY(60px);
+}
+#insta:hover::after {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+
+.fa-instagram {
+  transition: all 0.5s ease;
+}
+
+#insta:hover .fa-instagram {
+  background-image: linear-gradient(
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  transform: rotate(360deg);
+  font-size: 1.5rem;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+#facebook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+#facebook::before {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "Facebook";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-in;
+}
+#facebook::after {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "pirate-King";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-out;
+}
+
+#facebook:hover::before {
+  opacity: 1;
+  transform: translateY(60px);
+}
+#facebook:hover::after {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+.fa-facebook {
+  transition: all 0.5s ease;
+}
+
+#facebook:hover .fa-facebook {
+  background-image: linear-gradient(#2968e4, #173675);
+  transform: rotate(360deg);
+  font-size: 1.5rem;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+#twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+#twitter::before {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "Twitter";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-in;
+}
+#twitter::after {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "@leo-King";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-out;
+}
+
+#twitter:hover::before {
+  opacity: 1;
+  transform: translateY(60px);
+}
+#twitter:hover::after {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+.fa-twitter {
+  transition: all 0.5s ease;
+}
+
+#twitter:hover .fa-twitter {
+  background-image: linear-gradient(#2968e4, #173675);
+  transform: rotate(360deg);
+  font-size: 1.5rem;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+#gmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+#gmail::before {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "Gmail";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-in;
+}
+#gmail::after {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "leomahesh@gmail.com";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-out;
+}
+
+#gmail:hover::before {
+  opacity: 1;
+  transform: translateY(60px);
+}
+#gmail:hover::after {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+.fa-envelope {
+  transition: all 0.5s ease;
+}
+
+#gmail:hover .fa-envelope {
+  background-image: linear-gradient(
+    #4285f4,
+    #bb001b,
+    #ea4335,
+    #fbbc05,
+    #34a853
+  );
+  transform: rotate(360deg);
+  font-size: 1.5rem;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+#linkedin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+#linkedin::before {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "Linkedin";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-in;
+}
+#linkedin::after {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  content: "@Leo";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0;
+
+  transition: all 0.5s ease-out;
+}
+
+#linkedin:hover::before {
+  opacity: 1;
+  transform: translateY(60px);
+}
+#linkedin:hover::after {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+
+.fa-linkedin {
+  transition: all 0.5s ease;
+}
+
+#linkedin:hover .fa-linkedin {
+  background-image: linear-gradient(#2968e4, #173675);
+  transform: rotate(360deg);
+  font-size: 1.5rem;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
